@@ -123,3 +123,23 @@ body {
     flex-direction: row;
     justify-content: space-between;
     min-height: 500px; } }
+
+header {
+  background-color: #269226;
+  padding: 10px 10px;
+  color: white; }
+
+.signin-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 200px;
+  border-radius: 10px;
+  position: fixed;
+  left: 43%;
+  top: 40%;
+  background-color: #269226;
+  color: white; }
+
+.signin-style {
+  margin: 10px 0px; }

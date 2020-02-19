@@ -1,0 +1,20 @@
+<%- include('../partials/header.ejs') %>
+
+<div class="signin-box">
+        <form method='get' action='/getname' class='signin-form'>
+            <div class ="signin-style">
+                <label for="fistName">Sign in</label>
+            </div>
+            <div class ="signin-style">
+                <label for='firstName'>First name</label>
+            </div>
+            <div class ="signin-style">
+                <input type='text' placeholder="Type in your first name!" name='firstName' />
+            </div>
+            <div class ="signin-style">
+                <button type='submit'>Submit</button>
+            </div>
+        </form>
+</div>
+
+<%- include('../partials/footer.ejs') %>
