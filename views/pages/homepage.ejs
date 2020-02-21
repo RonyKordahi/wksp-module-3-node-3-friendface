@@ -1,7 +1,30 @@
 <%- include('../partials/header.ejs') %>
 
 <div class="profile">
-
+    <div>
+        <img class="profile-pic" src=<%- user.avatarUrl %> alt="profile picture" />
+    </div>
+    <div class="friends">
+        <div class="friend-title">
+            <h1 class="friendly-faces"><%- user.name %>'s Friendly Faces!</h1>
+        </div>
+        <div class="friend-faces">
+            <% user.friends.forEach(id => { %>
+                <% users.forEach(friend => { %> 
+                    <% if(friend.id === id && friend.id !== user.id) { %> 
+                        <div>
+                            <a href="/user/<%- friend.id %>">
+                                <img class="friend-pic" src=<%- friend.avatarUrl %> alt="friend profile" />
+                            </a>
+                        </div>
+                    <% } %>
+                <% }); %>
+            <% }) %>
+        </div>
+        <form class="FFF" action="/FFF">
+            <button type="Submit">Find new faces!</button>
+        </form>
+    </div>
 </div>
 
 <%- include('../partials/footer.ejs') %>

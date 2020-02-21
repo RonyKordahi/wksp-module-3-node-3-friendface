@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab:300&display=swap');
 @import 'reset';
 @import 'typography';
+@import 'profile';
 
 body {
     background: #fafafa;
@@ -56,27 +57,4 @@ body {
         justify-content: space-between;
         min-height: 500px;
     }
-}
-
-header {
-    background-color: rgb(38, 146, 38);
-    padding: 10px 10px;
-    color: white;
-}
-
-.signin-box {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 200px;
-    border-radius: 10px;
-    position: fixed;
-    left: 43%;
-    top: 40%;
-    background-color: rgb(38, 146, 38);
-    color: white;
-}
-
-.signin-style {
-    margin: 10px 0px;
 }

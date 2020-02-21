@@ -1,0 +1,20 @@
+<%- include('../partials/header.ejs') %>
+
+<% const notFriends = users.filter(user => { %>
+    <% if(!currentUser.friends.includes(currentUser.id)) { %>
+        <% currentUser.friends.push(currentUser.id); %>
+    <% } %>
+    <% return !currentUser.friends.includes(user.id); %>
+<% }) %> 
+
+<div class="notFriends">
+    <% notFriends.forEach(friend => { %>
+        <div>
+            <a href="/add/<%- friend.id %>">
+                <img class="friend-pic" src=<%- friend.avatarUrl %> alt="friend profile" />
+            </a>
+        </div>
+    <% }) %>
+</div>
+
+<%- include('../partials/footer.ejs') %>
