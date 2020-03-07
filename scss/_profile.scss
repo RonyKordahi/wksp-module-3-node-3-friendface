@@ -1,0 +1,114 @@
+header {
+    background-color: rgb(38, 146, 38);
+    padding: 10px 10px;
+    color: white;
+}
+
+.signin-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+    position: fixed;
+    left: 43%;
+    top: 40%;
+    background-color: rgb(38, 146, 38);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.signin-style {
+    margin: 10px 0px;
+}
+
+.friend-pic {
+    height: 100px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.friends {
+    text-align: center;
+}
+
+.friend-title {
+    background-color: white;
+    color: rgb(38, 146, 38);
+}
+
+.friendly-faces {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(38, 146, 38);
+}
+
+.friend-pic {
+    border-radius: 50px;
+}
+
+.friend-faces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(38, 146, 38);
+}
+
+.myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.profile-pic { 
+    min-width: 1000px;
+}
+
+.signOut {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.goHome {
+    position: absolute;
+    top: 20px;
+    left: 45%;
+}
+
+button {
+    background-color: yellowgreen;
+}
+
+.FFF {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.notFriends {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(38, 146, 38);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px 300px;
+}
+
+.notFriends > div {
+    margin: 10px 10px;
+}

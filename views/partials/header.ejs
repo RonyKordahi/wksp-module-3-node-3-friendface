@@ -6,5 +6,11 @@
 </head>
 <body>
     <header>
-        <h1 class='site-title'>FriendFace</h1>
+        <h1 class='site-title'><%= title %></h1>
+        <form class="goHome" action="/">
+            <button type="Submit">Go back to your face!</button>
+        </form>
+        <form class="signOut" action="/signout">
+            <button type="Submit">Sign out your face!</button>
+        </form>
     </header>
